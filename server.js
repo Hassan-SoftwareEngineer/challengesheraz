@@ -8,7 +8,7 @@ const server = http.createServer((req, res) => {
   res.end()
 })
 
-function respondHello (req, res) {
+function respondHello(req, res) {
   res.end(JSON.stringify({ msg: 'hello' }))
 }
 
@@ -16,3 +16,5 @@ server.listen(PORT)
 console.log(`Server listening on port ${PORT}`)
 
 if (require.main !== module) module.exports = server
+
+// sheraz changes one
